@@ -156,14 +156,22 @@ if (numeroDeDia === 1 || numeroDeDia === 7) {
   return 'Es fin de semana'
 } else {
   return 'Es dia Laboral'
-}  
+
+}
 } 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  const element = false;
+for (let i = 0; i < n.length; i++) {
+  if (element[i].includes(9) ) {
+    element = true;
+  } else {
+    return false;    
+  }
+}
 }
 
 
