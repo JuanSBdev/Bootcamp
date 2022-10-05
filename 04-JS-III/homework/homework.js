@@ -164,21 +164,23 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  const element = false;
-for (let i = 0; i < n.length; i++) {
-  if (element[i].includes(9) ) {
-    element = true;
-  } else {
-    return false;    
-  }
-}
+
 }
 
-
+}
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
+  for (let i = 0; i < arreglo.length; i++) {
+    element = arreglo[i];
+    if (element == arreglo[i]) {
+      return true;
+    } else {
+      return false;
+    }
+    
+  }
   
 } 
 
