@@ -164,6 +164,13 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+  let tiene = n.toString();
+  if(tiene.charAt(0) === '9'){
+    return true;
+  }
+   else{
+    return false;
+   }
 
 }
 
@@ -173,11 +180,10 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   for (let i = 0; i < arreglo.length; i++) {
-    element = arreglo[i];
-    if (element == arreglo[i]) {
-      return true;
-    } else {
+    if (arreglo[i] !== arreglo[i+1] ) {
       return false;
+    } else {
+      return true;
     }
     
   }
@@ -190,6 +196,16 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  niu = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] !== 0 ||array[i] !== 2 || array[i] !== 10) {
+      return "No se encontraron los meses pedidos"
+    } else {
+      return niu = array[i]
+    }
+  }
+  return niu;
+(hay q usar push fdp)
 }
 
 
