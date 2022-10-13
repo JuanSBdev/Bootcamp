@@ -196,16 +196,24 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  niu = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] !== 0 ||array[i] !== 2 || array[i] !== 10) {
-      return "No se encontraron los meses pedidos"
-    } else {
-      return niu = array[i]
+ function mesesDelAño(array) {
+  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
+  // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
+  //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
+  // Tu código:
+  var niu = [];
+  for(let i= 0; i<array.length; i++) {
+    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+      niu.push(array[i]);
     }
   }
-  return niu;
-(hay q usar push fdp)
+  if(niu.length < 3) {
+    return "No se encontraron los meses pedidos";
+  }
+  else {
+      return niu;
+  }
+}
 }
 
 
