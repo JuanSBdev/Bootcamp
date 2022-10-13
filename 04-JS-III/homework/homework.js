@@ -235,6 +235,14 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let arri = [];
+  for (let i = numero; i < 10; i*2) {
+    numero = [i];
+    arri.push(numero);
+    if(numero === i){
+      break
+    }
+  }
 }
 
 
