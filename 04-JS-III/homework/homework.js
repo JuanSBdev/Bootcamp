@@ -236,15 +236,16 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   let arri = [];
-  for (let i = numero; i < 10; i*2) {
-    numero = [i];
+  
+  for (let i = 1; i < 10; i*2) {
+    numero = numero * i;
     arri.push(numero);
     if(numero === i){
       break
     }
   }
+  //(arreglar esto)
 }
-
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
