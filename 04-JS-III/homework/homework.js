@@ -236,12 +236,20 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   let arri = [];
+  let suma = numero;
   
-  for (let i = 1; i < 10; i*2) {
-    numero = numero * i;
-    arri.push(numero);
-    if(numero === i){
+  for (let i = 0; i < 10; i++) {
+    suma = suma + 2 
+    if(suma === i){
       break
+    }
+    else{
+      arri.push(suma);
+    }
+    if (i < 10) {
+      "Se interrumpió la ejecución"
+    } else {
+      return arri;
     }
   }
   //(arreglar esto)
