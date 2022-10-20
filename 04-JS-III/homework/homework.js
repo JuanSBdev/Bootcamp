@@ -244,14 +244,14 @@ for (let i = 0; i < 10; i++) {
     else {
       arras.push(suma);
      }
-  };
+     if(i < 10) {
+       return 'Se interrumpió la ejecución';
+     }
+     else {
+         return arras;
+     }
+  }
 
-  if(i < 10) {
-    return 'Se interrumpió la ejecución';
-  }
-  else {
-      return arras;
-  }
 }   
 
 function continueStatement(numero) {
