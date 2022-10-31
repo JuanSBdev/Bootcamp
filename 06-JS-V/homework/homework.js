@@ -22,7 +22,10 @@ function crearUsuario() {
     }
     
   };
-  return Usuario;
+
+  let userA = new Usuario(1, 2, 3, 4)
+  return userA;
+
 }
 
 function agregarMetodoPrototype(Constructor) {
