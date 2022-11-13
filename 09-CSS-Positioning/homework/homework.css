@@ -47,9 +47,22 @@ text-align: center;
     align-items:center;
 }
 /* Acá va tu código */
+
+
+/* Ejercicio 6. */
 #ejercicioCinco{
     flex-direction: row-reverse;
 }
 
+#ejercicioSiete{
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+}
+#elementoCuatro{
+    align-self: end;
+}
+#elementoUno{
+    align-self: start;
 
-/* Ejercicio 6. */
+}
